@@ -22,7 +22,7 @@
        android:layout_marginStart="11dp"
        android:layout_marginTop="29dp"
        android:width="150dp"
-       android:text="Start Date" />
+       android:text="Current Date" />
 
    <TextView
        android:id="@+id/startDateDisplay"
@@ -40,7 +40,7 @@
        android:id="@+id/btnEndDate"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="24dp"
+       android:layout_marginTop="10dp"
        android:width="150dp"
        android:text="End Date"
        android:layout_below="@+id/btnStartDate"
@@ -58,15 +58,36 @@
        android:layout_alignStart="@+id/startDateDisplay" />
 
    <Button
-       android:id="@+id/btnCalculateAge"
+       android:id="@+id/btnTime"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="30dp"
+       android:layout_marginTop="10dp"
        android:width="150dp"
-       android:text="Calculate Age"
+       android:text="Time"
        android:layout_below="@+id/btnEndDate"
        android:layout_alignLeft="@+id/btnEndDate"
        android:layout_alignStart="@+id/btnEndDate" />
+
+   <TextView
+       android:id="@+id/tvTime"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="TextView"
+       android:layout_alignBaseline="@+id/btnTime"
+       android:layout_alignBottom="@+id/btnTime"
+       android:layout_alignLeft="@+id/startDateDisplay"
+       android:layout_alignStart="@+id/startDateDisplay" />
+
+   <Button
+       android:id="@+id/btnCalculateAge"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:width="150dp"
+       android:text="Calculate Age"
+       android:layout_below="@+id/btnTime"
+       android:layout_alignLeft="@+id/btnTime"
+       android:layout_alignStart="@+id/btnTime" />
 
    <TextView
        android:id="@+id/txtResult"
@@ -87,7 +108,7 @@
        android:textColor="@color/colorPrimaryDark"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="21dp"
+       android:layout_marginTop="15dp"
        android:text=""
        android:layout_below="@+id/txtResult"
        android:layout_alignLeft="@+id/txtResult"
@@ -99,7 +120,7 @@
        android:textColor="@color/colorPrimaryDark"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="18dp"
+       android:layout_marginTop="15dp"
        android:text=""
        android:layout_below="@+id/txtMonthDay"
        android:layout_alignLeft="@+id/txtMonthDay"
@@ -111,7 +132,7 @@
        android:textColor="@color/colorPrimaryDark"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="25dp"
+       android:layout_marginTop="15dp"
        android:text=""
        android:layout_below="@+id/txtWeekDays"
        android:layout_alignLeft="@+id/txtWeekDays"
