@@ -115,14 +115,14 @@ public class MainActivity extends AppCompatActivity {
                 txtMonthDays.setText("" + num_months + " Months " + dateCalculator.getDay() + " Days ");
 
                 txtTotalDays.append("\n" + dateCalculator.getTotalDay() * 24 + " Hours");
-                txtTotalDays.append("\n" + (dateCalculator.getTotalDay() * 24) * 60 + " Minuts");
+                txtTotalDays.append("\n" + (dateCalculator.getTotalDay() * 24) * 60 + " Minutes");
                 txtTotalDays.append("\n" + (dateCalculator.getTotalDay() * 24) * 3600 + " Seconds");
 
                 //showDateDialog(endDateDisplay, endDate);
 
                 try {
-                    Date date1 = timeFormat.parse("08:30 pm");
-                    Date date2 = timeFormat.parse("05:25 am");
+                    Date date1 = timeFormat.parse("05:25 am");
+                    Date date2 = timeFormat.parse("08:30 pm");
                     long mills = date1.getTime() - date2.getTime();
                     Log.v("TimeTotalMilli", "" + mills);
                     Log.v("TimeMilli1", "" + date1.getTime());
